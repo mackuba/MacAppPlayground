@@ -32,6 +32,7 @@
 		587C6A7616C575140023E5B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		587C6A7D16C576F90023E5B9 /* NotificationsPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsPanelController.h; sourceTree = "<group>"; };
 		587C6A7E16C576F90023E5B9 /* NotificationsPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsPanelController.m; sourceTree = "<group>"; };
+		589274FB16C59E3500309019 /* README.markdown */ = {isa = PBXFileReference; explicitFileType = text; indentWidth = 2; path = README.markdown; sourceTree = "<group>"; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 				587C6A6616C575140023E5B9 /* MacAppPlayground */,
 				587C6A5F16C575140023E5B9 /* Frameworks */,
 				587C6A5E16C575140023E5B9 /* Products */,
+				589274FA16C59DE300309019 /* Other files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +107,14 @@
 				587C6A6F16C575140023E5B9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589274FA16C59DE300309019 /* Other files */ = {
+			isa = PBXGroup;
+			children = (
+				589274FB16C59E3500309019 /* README.markdown */,
+			);
+			name = "Other files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +319,7 @@
 				587C6A7C16C575140023E5B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
