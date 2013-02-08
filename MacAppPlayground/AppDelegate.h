@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "NotificationsPanelController.h"
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NotificationsPanelController *notificationsPanelController;
 
 @end

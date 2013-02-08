@@ -11,7 +11,11 @@
 @implementation AppDelegate
 
 - (void) applicationDidFinishLaunching: (NSNotification *) notification {
-  // Insert code here to initialize your application
+  NSUserNotification *clickedNotification = notification.userInfo[NSApplicationLaunchUserNotificationKey];
+  if (clickedNotification) {
+    [self.notificationsPanelController userNotificationCenter: [NSUserNotificationCenter defaultUserNotificationCenter]
+                                      didActivateNotification: clickedNotification];
+  }
 }
 
 @end
