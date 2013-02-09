@@ -42,14 +42,19 @@
   [notification setTitle: self.titleField.stringValue];
   [notification setSubtitle: self.subtitleField.stringValue];
   [notification setInformativeText: self.bodyField.stringValue];
+  [notification setOtherButtonTitle: self.otherButtonField.stringValue];
 
   // NOTE: this setting has no effect until you switch "alert style" from "banners" to "alerts"
   //       in the MacAppPlayground application entry in System Preferences!
 
+  // NSUserNotificationAlertStyle entry in info plist is supposed to set the default value,
+  // but apparently it doesn't work (?)
+
   if (self.hasButtonsSelected) {
     [notification setHasActionButton: YES];
     [notification setActionButtonTitle: self.actionButtonField.stringValue];
-    [notification setOtherButtonTitle: self.otherButtonField.stringValue];
+  } else {
+    [notification setHasActionButton: NO];
   }
 
   [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification: notification];

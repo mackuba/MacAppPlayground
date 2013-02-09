@@ -1484,6 +1484,7 @@
 											<string key="NSFrame">{{101, 7}, {131, 32}}</string>
 											<reference key="NSSuperview" ref="89266999"/>
 											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="165333474">
@@ -1505,7 +1506,7 @@
 										<object class="NSButton" id="46049804">
 											<reference key="NSNextResponder" ref="89266999"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{16, 117}, {99, 18}}</string>
+											<string key="NSFrame">{{16, 117}, {135, 18}}</string>
 											<reference key="NSSuperview" ref="89266999"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="513468891"/>
@@ -1514,7 +1515,7 @@
 											<object class="NSButtonCell" key="NSCell" id="155273467">
 												<int key="NSCellFlags">67108864</int>
 												<int key="NSCellFlags2">268435456</int>
-												<string key="NSContents">Has buttons</string>
+												<string key="NSContents">Has action button</string>
 												<reference key="NSSupport" ref="651063973"/>
 												<string key="NSCellIdentifier">_NS:9</string>
 												<reference key="NSControlView" ref="46049804"/>
@@ -1608,7 +1609,7 @@
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTextFieldCell" key="NSCell" id="553322247">
-												<int key="NSCellFlags">-1267728319</int>
+												<int key="NSCellFlags">-1804599231</int>
 												<int key="NSCellFlags2">272630784</int>
 												<string key="NSContents"/>
 												<reference key="NSSupport" ref="651063973"/>
@@ -1674,7 +1675,7 @@
 			<object class="NSCustomObject" id="899774370">
 				<string key="NSClassName">NotificationsPanelController</string>
 			</object>
-			<object class="NSUserDefaultsController" id="801911194">
+			<object class="NSUserDefaultsController" id="709129980">
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</array>
@@ -2455,22 +2456,6 @@
 						</object>
 					</object>
 					<int key="connectionID">645</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">enabled: hasButtonsSelected</string>
-						<reference key="source" ref="414424042"/>
-						<reference key="destination" ref="899774370"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="414424042"/>
-							<reference key="NSDestination" ref="899774370"/>
-							<string key="NSLabel">enabled: hasButtonsSelected</string>
-							<string key="NSBinding">enabled</string>
-							<string key="NSKeyPath">hasButtonsSelected</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">648</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3656,7 +3641,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">638</int>
-						<reference key="object" ref="801911194"/>
+						<reference key="object" ref="709129980"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</array>
